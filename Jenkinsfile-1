@@ -1,9 +1,14 @@
 pipeline {
   agent {label 'agent1'}
 
+  environtment {
+
+  }
+
   stages {
     stage('Hello') {
       steps {
+        echo "${WORKSPACE}"
         sh '''
           ansible --version
           ansible-playbook --version
