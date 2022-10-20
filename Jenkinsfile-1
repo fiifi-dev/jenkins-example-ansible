@@ -1,10 +1,6 @@
 pipeline {
   agent {label 'agent1'}
 
-  environtment {
-
-  }
-
   stages {
     stage('Hello') {
       steps {
